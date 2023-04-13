@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'devscast', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'engineering', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -39,17 +39,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/devscast/docs.devscast.tech/',
+            'https://github.com/devscast/engineering.devscast.tech/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/devscast/docs.devscast.tech/',
+            'https://github.com/devscast/engineering.devscast.tech/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,10 +57,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/devscast-social-card.jpg',
       navbar: {
-        title: 'Devscast Engineering',
+        title: 'Engineering',
         logo: {
           alt: 'devscast logo',
           src: 'img/logo.png',
@@ -89,9 +83,9 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Devscast Engineering. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Devscast Engineering.`,
       },
       prism: {
         theme: lightCodeTheme,
